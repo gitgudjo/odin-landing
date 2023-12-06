@@ -1,0 +1,91 @@
+/* Import the font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+@font-face {
+    font-family: FA_TLFKFEYXEJ;
+    src: url(fonts/FA_TLFKFEYXEJ.ttf);
+}
+
+@font-face {
+    font-family: FA_WCAQLHHWSX;
+    src: url(fonts/FA_WCAQLHHWSX.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #605e5d;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.socials img,
+.login img {
+    width: 40px;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+
+.logo {
+    font-family: "FA_TLFKFEYXEJ", sans-serif;
+    font-size: 3rem;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+}
+
+.logintext {
+    font-family: "Roboto", sans-serif;
+}
+
+.loginicon img {
+    width: 25px;
+    margin-right: 5px;
+    filter: invert(100%);
+}
+
+.opening {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Adjust the height as needed */
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+}
+
+.introimage {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+.overlaytext {
+    position: absolute;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    font-size: 120px;
+    align-self: center;
+    top: 160px;
+    left: -230px;
+    font-weight: bold;
+    font-family: "FA_WCAQLHHWSX", sans-serif;
+}
