@@ -1,4 +1,3 @@
-/* Import the font */
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
@@ -72,62 +71,3 @@ body {
     background-image: url(images/background2.jpg);
     background-size: cover;
 }
-
-.introimage {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: 1;
-}
-
-.overlaytext {
-    position: absolute;
-    z-index: 2;
-    color: rgb(255, 255, 255);
-    font-size: 120px;
-    align-self: center;
-    top: 160px;
-    left: 0px;
-    font-weight: bold;
-    font-family: "FA_WCAQLHHWSX", sans-serif;
-    animation: intro 1s forwards;
-    animation-delay: 3s;
-}
-.gallery{
-    height: 120vh;
-    background-image: url(images/scribble.gif);
-    background-size: cover;
-}
-
-.row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-top: 80px;
-  }
-  
-  .block {
-    position: relative;
-    width: 20%;
-    height: 0;
-    padding-bottom: 20%;
-    margin: 20px;
-    border: 2px solid black;
-    background-color: white;
-  }
-  
-  .block p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-family: "Righteous", sans-serif;
-    font-size: 20px;
-    color: black;
-  }
-
-  @keyframes intro{
-    0% {opacity: 0;}
-    100% {opacity: 100;}
-  }
