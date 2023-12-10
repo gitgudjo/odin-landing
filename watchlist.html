@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="watchlist.css">
-    <link href="svgMap-master/dist/svgMap.css" rel="stylesheet">
 <script src="script.js"></script>
 </head>
 <body>
     <div id="sidebar">
-        <h2>Sidebar</h2>
-        <p>Your sidebar content goes here.</p>
-      </div>
+        <div class="top-container">
+            <p class="harakiriText" id="harakiriContent1">“This thing we call samurai honour is ultimately nothing but a facade.” </p>
+
+        </div>
+        <img src="images/harakiri.png" alt="Harakiri Image 1" class="harakiriImage" id="harakiriImage1">
+        
+
+    </div>
     
       <div id="banner">
-        <p>Fixed Banner</p>
+        <p>FILM REVIEWS</p>
       </div>
     
       <div id="content">
-        <div class="harakiri">
+        <div class="harakiri" onmouseover="showImage('harakiriImage1')" onmouseout="hideImage('harakiriImage1')">
         <p>Harakiri</p>
     </div>
     <div class="TheHunt">
