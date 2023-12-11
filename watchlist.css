@@ -1,92 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 
-
-
-
 body {
     margin: 0;
     background-color: #f1f1f1;
-  }
-  
-  #sidebar {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+
+    /* For WebKit browsers (Chrome, Safari) */
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+}
+
+.top-container, .sidebar2 {
     position: fixed;
     left: 0;
-    top: 0;
     width: 380px;
-    height: 100vh;
+    height: 50vh;
     background-color: #f1f1f1;
     color: black;
     box-sizing: border-box;
-    border-right: 1px solid black; 
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-  }
-  
-  .top-container {
-    height: 50%;
-    box-sizing: border-box;
-    border-bottom: 1px solid black;
-    padding: 30px; 
-    margin-top: 40px;
-    line-height: 1.5;
-    font-size: 2.2rem;
-    font-family: 'Josefin Slab', serif;
-}
-
-
-  #sidebar img{
-box-sizing: border-box;
-    height: 50%;
-  
-
+    border-right: 1px solid black;
+    
     
 }
 
-  #banner {
+.top-container {
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 380px;
+        height: 50vh;   
+        background-color: #f1f1f1;
+        box-sizing: border-box;
+        border-right: 1px solid black;
+}
+
+.top-container p {
+    margin-top: 110px;
+    margin-left: 20px;
+    margin-right: 10px;
+    line-height: 1.5; /* Adjust line-height if necessary */
+    font-size: 2.2rem; /* Adjust font-size if necessary */
+    font-family: 'Josefin Slab', serif;
+    color: black;
+}
+.sidebar2 {
+    top: 50vh;
+    
+}
+
+.sidebar2 img {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    border-top: 1px solid black;
+}
+
+#banner {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #f1f1f1; 
-    color: #000; 
+    background-color: #f1f1f1;
+    color: #000;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
-    border-bottom: 1px solid black; 
+    border-bottom: 1px solid black;
     height: 50px;
     line-height: 1.6;
     font-family: 'Josefin Slab', serif;
-    font-size: 3rem;
-  }
+    font-size: 4rem;
+    z-index: 1;
+}
 
-  #banner p {
-    margin: 0; 
-    font-size: 1.5rem; 
-  }
-  
-  #content {
+#banner p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#content {
     margin-left: 480px; 
-    padding: 20px;
     box-sizing: border-box;
-    margin-top: 60px;
+    margin-top: 50px;
     font-family: 'Urbanist', sans-serif;
     font-size: 6rem;
-  }
+    right: 50px;
+    position: absolute; /* Changed to absolute positioning to fix "socials" tab */
+    top: 0;
+    z-index: 0;
+}
 
-  .harakiri:hover{
-color: red;
-  }
+#spin img{
+    filter: invert(100%);   
 
-  .harakiriImage,
-  .harakiriText {
-      opacity: 0;
-      transition: opacity 0.2s ease-in;
-  }
-  
-  .harakiriImage.visible,
-  .harakiriText.visible {
-      opacity: 1;
-  }
-  
- 
+}
+
+.socials{
+    position: fixed;
+    right: 0;
+    width: 70px;
+    height: 100vh;
+    background-color: #f1f1f1;
+    color: black;
+    border-left: 1px solid black;
+    overflow: visible;
+    top: 50px;
+    
+}
+
+.socials p{
+    font-size: 2.2rem; 
+    font-family: 'Josefin Slab', serif;
+    color: black;
+    transform: rotate(90deg);
+    white-space: nowrap; /* stopped words from stacking */
+    margin-top: 100px;
+}
+
+
+.circle {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000; /* Set the border to create the outline */
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.socials:hover .circle {
+    background-color: #000; /* Fill in the circle on hover */
+}
+
+.harakiri:hover {
+    color: red;
+}
+
+.thehunt:hover{
+    color: brown;
+}
+
+.worstperson:hover{
+    color: green;
+}
+
+
+
+.harakiriImage, .harakiriText, .TheHuntImage, .worstpersonImage {
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    
+}
+
+
+.harakiriImage.visible, .harakiriText.visible, .TheHuntImage.visible, .TheHuntText.visible {
+    opacity: 1;
+}
+

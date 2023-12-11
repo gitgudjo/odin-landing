@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="watchlist.css">
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <div id="sidebar">
+    
         <div class="top-container">
-            <p class="harakiriText" id="harakiriContent1">“This thing we call samurai honour is ultimately nothing but a facade.” </p>
-
+            <p class="harakiriText" id="harakiriContent1">“This thing we call samurai honour is ultimately nothing but a facade.”</p>
+            <p class="harakiriText" id="theHuntContent">“The world is full of evil but if we hold on to each other, it goes away”</p>
+            <p class="harakiriText" id="worstpersonContent">“Hvis du koser for mye med barna dine, blir de narkomane”</p>
         </div>
-        <img src="images/harakiri.png" alt="Harakiri Image 1" class="harakiriImage" id="harakiriImage1">
-        
+    
 
+    <div class="sidebar2">
+        <img src="images/harakiri.png" alt="Harakiri Image 1" class="harakiriImage" id="harakiriImage1">
+        <img src="images/thehunt.png" alt="The Hunt Image" class="harakiriImage" id="theHuntImage">
+        <img src="images/worstperson.png" alt="theworstpersonintheworld" class="harakiriImage" id="worstpersonImage">
+        <img src="images/spin.gif" alt="" id="spin">
     </div>
+
     
-      <div id="banner">
+
+    
+    
+    </div>
+    <div id="banner">
         <p>FILM REVIEWS</p>
-      </div>
-    
-      <div id="content">
-        <div class="harakiri" onmouseover="showImage('harakiriImage1')" onmouseout="hideImage('harakiriImage1')">
-        <p>Harakiri</p>
     </div>
-    <div class="TheHunt">
-        <p>The Hunt</p>
+
+    <div id="content">
+        <div class="harakiri" onmouseover="toggleVisibility('harakiriImage1', 'harakiriContent1')"
+            onmouseout="toggleVisibility('harakiriImage1', 'harakiriContent1')">
+            <p>Harakiri</p>
+        </div>
+        <div class="thehunt" onmouseover="toggleVisibility('theHuntImage', 'theHuntContent')"
+            onmouseout="toggleVisibility('theHuntImage', 'theHuntContent')">
+            <p>The Hunt</p>
+        </div>
+        <div class="worstperson" onmouseover="toggleVisibility('worstpersonImage', 'worstpersonContent')"
+        onmouseout="toggleVisibility('worstpersonImage', 'worstpersonContent')">
+            <p>The Worst Person in the World</p>
+        </div>
+        <div class="test"><p>test!!!!!</p></div>
     </div>
-      </div>
-    
+<a href="https://letterboxd.com/joeyeojoey/"><div class="socials">
+    <div class="circle"></div>
+    <p>My Letterboxd</p>
+</div>
+</a>
 </body>
+
 </html>
