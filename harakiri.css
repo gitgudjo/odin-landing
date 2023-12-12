@@ -2,11 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 
 
-  
 body {
     margin: 0;
     background-color: #f1f1f1;
- 
 }
 
 .top-container, .sidebar2 {
@@ -71,12 +69,21 @@ body {
     font-family: 'Josefin Slab', serif;
     font-size: 4rem;
     z-index: 1;
+    
 }
 
 #banner p {
     margin: 0;
     font-size: 1.5rem;
+    
 }
+
+#banner a{
+text-decoration: none;
+color: black;
+}
+
+
 
 #content {
     margin-left: 480px; 
@@ -87,16 +94,31 @@ body {
     position: absolute; /* Changed to absolute positioning to fix "socials" tab */
     top: 0;
     z-index: 0;
-    opacity: 1;
-    
+    animation: fadeIn 0.5s forwards ;
+
 }
 
-#content a {
+.thehunt{
+    color: brown;
     text-decoration: none;
-    color: black;
+}
+
+.worstperson{
+color: green;
+text-decoration: none;
+
 }
 
 
+
+.review p {
+    line-height: 1.5; /* Adjust line-height if necessary */
+    font-size: 2rem; /* Adjust font-size if necessary */
+    font-family: 'Josefin Slab', serif;
+    color: black; 
+    padding-bottom: 20px;
+    margin-right: 100px;
+}
 
 @keyframes fadeIn {
     0% {
@@ -107,6 +129,11 @@ body {
     }
   }
 
+
+#content a {
+    text-decoration: none;
+    color: red;
+}
 
 #spin img{
     filter: invert(100%);   
@@ -123,7 +150,7 @@ body {
     border-left: 1px solid black;
     overflow: visible;
     top: 50px;
-    
+    animation: fadeIn 0.5s forwards ;
 }
 
 .socials p{
@@ -133,7 +160,6 @@ body {
     transform: rotate(90deg);
     white-space: nowrap; /* stopped words from stacking */
     margin-top: 100px;
-    opacity: 1;
 }
 
 
@@ -152,34 +178,3 @@ body {
 .socials:hover .circle {
     background-color: #000; /* Fill in the circle on hover */
 }
-
-.harakiri:hover {
-    color: red;
-}
-
-.thehunt:hover{
-    color: brown;
-}
-
-.worstperson:hover{
-    color: green;
-}
-
-
-
-.harakiriImage, .harakiriText, .TheHuntImage, .worstpersonImage {
-    opacity: 0;
-    transition: opacity 0.2s ease-in;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.2s ease-in;
-    
-}
-
-
-.harakiriImage.visible, .harakiriText.visible, .TheHuntImage.visible, .TheHuntText.visible {
-    opacity: 1;
-}
-
