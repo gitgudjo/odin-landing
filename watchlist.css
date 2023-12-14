@@ -26,7 +26,7 @@ body {
     
         position: fixed;
         top: 0;
-        left: 0;
+        left: 0px;
         width: 380px;
         height: 50vh;   
         background-color: #f1f1f1;
@@ -154,20 +154,39 @@ body {
 }
 
 .harakiri:hover {
-    color: red;
+    color: rgb(218, 9, 9);
 }
 
 .thehunt:hover{
-    color: brown;
+    color: rgb(107, 31, 31);
 }
 
 .worstperson:hover{
     color: green;
 }
 
+.closeup:hover{
+    color: rgb(190, 129, 139);
+}
 
 
-.harakiriImage, .harakiriText, .TheHuntImage, .worstpersonImage {
+
+.cityofgod:hover{
+    color: yellow;
+}
+
+.chungkingexpress:hover{
+    color: rgb(84, 182, 214);
+}
+
+.mother:hover{
+color: purple;
+
+}
+
+
+
+.harakiriImage, .harakiriText {
     opacity: 0;
     transition: opacity 0.2s ease-in;
     position: absolute;
@@ -179,7 +198,7 @@ body {
 }
 
 
-.harakiriImage.visible, .harakiriText.visible, .TheHuntImage.visible, .TheHuntText.visible {
+.harakiriImage.visible, .harakiriText.visible{
     opacity: 1;
 }
 

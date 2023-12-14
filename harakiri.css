@@ -99,7 +99,7 @@ color: black;
 }
 
 .thehunt{
-    color: brown;
+    color: rgb(107, 31, 31);
     text-decoration: none;
 }
 
@@ -109,6 +109,23 @@ text-decoration: none;
 
 }
 
+.closeup{
+    color: rgb(190, 129, 139);
+
+}
+
+.cityofgod{
+    color: yellow;
+}
+
+.chungkingexpress{
+    color: rgb(84, 182, 214);
+}
+
+.mother{
+color: purple;
+
+}
 
 
 .review p {
@@ -132,7 +149,7 @@ text-decoration: none;
 
 #content a {
     text-decoration: none;
-    color: red;
+    color: rgb(218, 9, 9);
 }
 
 #spin img{
