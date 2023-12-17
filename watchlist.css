@@ -35,9 +35,9 @@ body {
 }
 
 .top-container p {
-    margin-top: 30%;
-    margin-left: 6%;
-    margin-right: 10px;
+    margin-top: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
     line-height: 1.5; /* Adjust line-height if necessary */
     font-size: 2.2rem; /* Adjust font-size if necessary */
     font-family: 'Josefin Slab', serif;
@@ -182,6 +182,10 @@ body {
 .mother:hover{
 color: purple;
 
+}
+
+.ladyonfire:hover{
+color:orange
 }
 
 
