@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    background-color: #008080;
+   
+}
+
+.taskbar{
+    position: fixed;
+width: 100%;
+height: 40px;
+bottom: 0px;
+background-color: #C0C0C0;
+display: flex;
+box-sizing: border-box;
+border-top: 3px solid white;
+flex-direction: row;
+
+}
+
+.startup img{
+    flex: 1;
+    max-height: auto ;
+    max-width: 100px;
+}
+
+.icongrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100%;
+    margin-left: 10px;
+    margin-top: 10px ;
+}
+
+.iconcontainer {
+    width: 300px;
+    height: 80%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.icontile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icongrid img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.icontile p {
+    margin-top: 10px; 
+    color: white; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ a{
+    text-decoration: none;
+ }

@@ -12,7 +12,7 @@ body {
 .top-container, .sidebar2 {
     position: fixed;
     left: 0;
-    width: 380px;
+    width: 25%;
     height: 50vh;
     background-color: #f1f1f1;
     color: black;
@@ -27,7 +27,7 @@ body {
         position: fixed;
         top: 0;
         left: 0px;
-        width: 380px;
+        width: 25%;
         height: 50vh;   
         background-color: #f1f1f1;
         box-sizing: border-box;
@@ -35,8 +35,8 @@ body {
 }
 
 .top-container p {
-    margin-top: 110px;
-    margin-left: 20px;
+    margin-top: 30%;
+    margin-left: 6%;
     margin-right: 10px;
     line-height: 1.5; /* Adjust line-height if necessary */
     font-size: 2.2rem; /* Adjust font-size if necessary */
@@ -79,7 +79,7 @@ body {
 }
 
 #content {
-    margin-left: 480px; 
+    margin-left: 30%; 
     box-sizing: border-box;
     margin-top: 50px;
     font-family: 'Urbanist', sans-serif;
@@ -172,7 +172,7 @@ body {
 
 
 .cityofgod:hover{
-    color: yellow;
+    color: rgb(185, 185, 4);
 }
 
 .chungkingexpress:hover{
