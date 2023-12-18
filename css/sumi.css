@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+
+@font-face {
+    font-family: Picnic;
+    src: url(/fonts/PicNic-Regular.otf);
+}
+
+
+body {
+    overflow: hidden;
+}
+
+
+#image-strip {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#image-strip img {
+    display: inline-block;
+    height: 16.666vh; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.images {
+    flex: 1;
+}
+
+.info {
+    flex: 1;
+}
+
+.title p{
+    position: relative;
+    margin-left: 2%;
+    font-family: Picnic;
+    font-size: 5rem;
+    margin-top: 1%;
+}
+
+.maintext p{
+    font-family: 'Josefin Slab', serif;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.example img{
+    opacity: 0;
+}

@@ -17,7 +17,7 @@ body {
     background-color: #f1f1f1;
     color: black;
     box-sizing: border-box;
-    border-right: 1px solid black;
+   
     
     
 }
@@ -50,11 +50,15 @@ body {
 
 .sidebar2 img {
     box-sizing: border-box;
-    height: 100%;
     width: 100%;
+    height: 100%; /* Set the height to be the same as the width */
     display: inline-block;
     border-top: 1px solid black;
+    object-fit: cover;
+    border-right: 1px solid black;
 }
+
+
 
 #banner {
     position: fixed;
