@@ -28,3 +28,13 @@ function delay (URL) {
     setTimeout( function() { window.location = URL }, 500 );
 }
 
+function openFileExplorer(folderName) {
+    // You can customize this function to load content based on the folderName
+    // For simplicity, just toggle the visibility of the file explorer window
+    document.getElementById('fileExplorer').style.display = 'block';
+  }
+  
+  function closeFileExplorer() {
+    document.getElementById('fileExplorer').style.display = 'none';
+  }
+  

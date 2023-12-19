@@ -4,6 +4,11 @@ body{
    
 }
 
+@font-face {
+    font-family: win95;
+    src: url(/fonts/W95FA.otf);
+}
+
 .taskbar{
     position: fixed;
 width: 100%;
@@ -14,7 +19,7 @@ display: flex;
 box-sizing: border-box;
 border-top: 3px solid white;
 flex-direction: row;
-
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .startup img{
@@ -60,9 +65,98 @@ flex-direction: row;
 .icontile p {
     margin-top: 10px; 
     color: white; 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: win95;
 }
 
  a{
     text-decoration: none;
  }
+
+ #fileExplorer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 5px solid #B4B6BB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+    height: 50%;
+    width: 45%;
+    font-family: win95;
+    font-size: 1rem;
+    
+  }
+
+  .filebox{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+  }
+
+  .fileboxtop{
+    flex: 10%;
+   color: black;
+    background-color: #B4B6BB;
+   
+  }
+.fileboxtop p{
+position: absolute;
+ top: 0PX;
+
+}
+  .fileboxmid{
+    flex: 80%;
+    
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 10px;
+    background-color: white;
+    
+  }
+
+ 
+
+  .closebutton img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 8%;
+  }
+
+  .closebutton:hover{
+    cursor: pointer;
+  }
+
+  .filegrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    grid-gap: 15px; /* Adjust the gap between icons */
+    width: 100%;
+  }
+  
+  .icon {
+   
+    padding: 10px; 
+    text-align: center;
+    max-width: 100%; 
+    max-height: 100%; 
+  }
+  
+  .icon img {
+    max-width: 100%; 
+    max-height: 100%; 
+    display: block; 
+    margin: auto; 
+  }
+
+  
+  
+  .filebox a{
+    text-decoration: none;
+    color: black;
+  }

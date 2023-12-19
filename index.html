@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>joe's website</title>
     <link rel="stylesheet" href="/css/landing.css">
+    <script src="script.js"></script>
    
 </head>
 <body>
     <script src="landing.js"></script>
+    <div class="desktop">
     <div class="iconcontainer">
         <div class="icongrid">
-            <div class="icontile">
-                <a href="photoroll.html">
+            <div class="icontile" onclick="openFileExplorer('fakeFolder1')">
             <img src="images/camera.png" alt="">
             <p>My Photos</p>
-        </a>
+        
         </div>
         <div class="icontile">
             <a href="watchlist.html"><img src="images/filmreel.png" alt="">
@@ -28,10 +29,68 @@
                 <p>Suminagashi</p>
             </a>
         </div>
-
+       
 
 
         </div>
+
+    </div>
+    <div id="fileExplorer" class="hidden">
+        <div class="filebox">
+        <div class="fileboxtop">
+
+          <div class="title"><p>File Explorer</p></div>
+          <div class="closebutton" onclick="closeFileExplorer()"><img src="images/closebutton.png" alt=""></div>
+        </div>
+        <div class="fileboxmid">
+            <div class="filegrid">
+               
+                <div class="icon">
+                    <a href="/photocollections/japan.html">
+                   <img src="images/folder.png" alt="">
+                   <p>Japan, 2019</p>
+                </a>
+                </div>
+                <div class="icon">
+                    <img src="images/folder.png" alt="">
+                    <p>Empty folder</p></div>
+
+                <div class="icon">
+                    <img src="images/folder.png" alt="">
+                     <p>Empty folder</p></div>
+                <div class="icon">
+                     <img src="images/folder.png" alt="">
+                    <p>Empty folder</p></div>
+                <div class="icon">
+                    <img src="images/folder.png" alt="">
+                    <p>Empty folder</p></div>
+                <div class="icon">
+                        <img src="images/folder.png" alt="">
+                        <p>Empty folder</p></div>
+                        <div class="icon">
+                            <img src="images/folder.png" alt="">
+                            <p>Empty folder</p></div>
+                            <div class="icon">
+                                <img src="images/folder.png" alt="">
+                                <p>Empty folder</p></div>
+                                <div class="icon">
+                                    <img src="images/folder.png" alt="">
+                                    <p>Empty folder</p></div>
+                                    <div class="icon">
+                                        <img src="images/folder.png" alt="">
+                                        <p>Empty folder</p></div>
+                                        <div class="icon">
+                                            <img src="images/folder.png" alt="">
+                                            <p>Empty folder</p></div>
+                                            <div class="icon">
+                                                <img src="images/folder.png" alt="">
+                                                <p>Empty folder</p></div>
+            
+        </div>
+        
+        
+      </div>
+    </div>
     </div>
     <div class="taskbar">
 <div class="startup"><img src="images/start.jpg" alt=""></div>
