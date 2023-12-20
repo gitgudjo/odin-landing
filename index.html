@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>joe's website</title>
+    <link rel="icon" type="image/x-icon" href="/ico/1.ico">
     <link rel="stylesheet" href="/css/landing.css">
     <script src="script.js"></script>
    
@@ -37,59 +38,83 @@
     </div>
     <div id="fileExplorer" class="hidden">
         <div class="filebox">
-        <div class="fileboxtop">
-
-          <div class="title"><p>File Explorer</p></div>
-          <div class="closebutton" onclick="closeFileExplorer()"><img src="images/closebutton.png" alt=""></div>
-        </div>
-        <div class="fileboxmid">
-            <div class="filegrid">
-               
-                <div class="icon">
-                    <a href="/photocollections/japan.html">
-                   <img src="images/folder.png" alt="">
-                   <p>Japan, 2019</p>
-                </a>
+            <div class="fileboxtop">
+                <div class="title">
+                    <p>File Explorer</p>
                 </div>
-                <div class="icon">
-                    <img src="images/folder.png" alt="">
-                    <p>Empty folder</p></div>
-
-                <div class="icon">
-                    <img src="images/folder.png" alt="">
-                     <p>Empty folder</p></div>
-                <div class="icon">
-                     <img src="images/folder.png" alt="">
-                    <p>Empty folder</p></div>
-                <div class="icon">
-                    <img src="images/folder.png" alt="">
-                    <p>Empty folder</p></div>
-                <div class="icon">
-                        <img src="images/folder.png" alt="">
-                        <p>Empty folder</p></div>
-                        <div class="icon">
+                <div class="closebutton" onclick="closeFileExplorer()">
+                    <img src="images/closebutton.png" alt="">
+                </div>
+            </div>
+            <div class="fileboxmid">
+                <div class="filegrid">
+                    <div class="icon" onclick="openBrowser('Japanfolder')">
+                        
                             <img src="images/folder.png" alt="">
-                            <p>Empty folder</p></div>
-                            <div class="icon">
-                                <img src="images/folder.png" alt="">
-                                <p>Empty folder</p></div>
-                                <div class="icon">
-                                    <img src="images/folder.png" alt="">
-                                    <p>Empty folder</p></div>
-                                    <div class="icon">
-                                        <img src="images/folder.png" alt="">
-                                        <p>Empty folder</p></div>
-                                        <div class="icon">
-                                            <img src="images/folder.png" alt="">
-                                            <p>Empty folder</p></div>
-                                            <div class="icon">
-                                                <img src="images/folder.png" alt="">
-                                                <p>Empty folder</p></div>
-            
+                            <p>Japan, 2019</p>
+                        
+                    </div>
+                    <div class="icon" onclick="openBrowser('albaniaFolder')">
+                        <img src="images/folder.png" alt="">
+                        <p>Albania,2018</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/folder.png" alt="">
+                        <p>Empty folder</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/folder.png" alt="">
+                        <p>Empty folder</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/folder.png" alt="">
+                        <p>Empty folder</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/folder.png" alt="">
+                        <p>Empty folder</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/folder.png" alt="">
+                        <p>Empty folder</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/folder.png" alt="">
+                        <p>Empty folder</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/folder.png" alt="">
+                        <p>Empty folder</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/folder.png" alt="">
+                        <p>Empty folder</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/folder.png" alt="">
+                        <p>Empty folder</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/folder.png" alt="">
+                        <p>Empty folder</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        
-      </div>
+    </div>
+    <div id="browser" class="hidden">
+        <div class="filebox">
+            <div class="fileboxtop">
+                <div class="title">
+                    <p></p>
+                </div>
+                <div id="closebutton" onclick="closeBrowser()">
+                    <img src="images/closebutton.png" alt="">
+                </div>
+            </div>
+            <div class="photoroll">
+               
+            </div>
     </div>
     </div>
     <div class="taskbar">

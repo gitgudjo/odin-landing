@@ -68,6 +68,10 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-family: win95;
 }
 
+.icontile:hover{
+    cursor: pointer;
+  }
+
  a{
     text-decoration: none;
  }
@@ -146,6 +150,10 @@ position: absolute;
     max-width: 100%; 
     max-height: 100%; 
   }
+
+  .icon:hover{
+    cursor: pointer;
+  }
   
   .icon img {
     max-width: 100%; 
@@ -161,4 +169,54 @@ position: absolute;
     color: black;
   }
 
-  
+  #browser {
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 5px solid #B4B6BB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+    height: 90%;
+    width: 70%;
+    font-family: win95;
+    font-size: 1rem;
+    overflow: auto; /* Enable scrolling within the fake browser */
+}
+
+.photoroll {
+    margin: auto;
+    width: 90%;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    padding-right: 20px;
+    /* Optional: If you want to limit the height and enable vertical scrolling within .photoroll */
+    max-height: 95%;
+    overflow-y: auto;
+}
+
+.photoroll img {
+    display: block;
+    margin: auto;
+    max-width: 100%; /* Adjusted for full-width within .photoroll */
+    height: auto; /* Maintain aspect ratio */
+    padding: 20px 0 100px 0;
+}
+
+.portrait img{
+    display: block;
+    margin: auto;
+    max-width: 50%; 
+    width: auto;
+    padding: 20px 0px 100px 0px;
+  }
+
+  #closebutton{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 7%;
+  }
+
