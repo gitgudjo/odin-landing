@@ -1,0 +1,13 @@
+body{
+    margin: 100;
+}
+
+#svgtest {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    width: 100px; /* Set a width if necessary */
+    height: 100px; /* Set a height if necessary */
+    background-color: red; /* Add a background color for visibility */
+  }
+  
